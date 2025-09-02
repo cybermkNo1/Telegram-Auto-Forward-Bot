@@ -225,7 +225,7 @@ bot.command('help', async (ctx) => {
       helpKeyboard
     );
     
-    console.log(Help command executed for ${isAdmin ? 'admin' : 'user'}: ${ctx.from?.id || 'unknown'});
+    console.log(`Help command executed for ${isAdmin ? 'admin' : 'user'}: ${ctx.from?.id || 'unknown'}`);
     
   } catch (error) {
     console.error('Help command error:', error.stack || error);
@@ -249,7 +249,7 @@ bot.command('setwatermark', async (ctx) => {
     return ctx.reply(
       `Current watermark: ${watermarkConfig.text || 'None'}\n\n`
       + `Usage: /setwatermark [your text]\n`
-      + `Example: /setwatermark \\n\\n📌 Powered by @Opleech_WD`
+      + `Example: /setwatermark \\n\\n📌 Powered by @Slayber007`
     ).catch(console.error);
   }
 
